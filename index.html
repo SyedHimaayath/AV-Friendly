@@ -54,15 +54,23 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
           <ul class="dropdown-menu">
-          	<p>Your pages :</p>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+          	<p>Your Pages :</p>
+          	<li role="presentation" class="menu-icons"><a href="#"><img src="codedot.png"> Code Dot</a></li>
+            <li role="presentation"><a href="#"><img src="https://pbs.twimg.com/media/CyoItS0XcAADlon.jpg">Hacktrack v2.0</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="#">Create Page</a></li>
+            <li><a href="#">Manage Page</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Create Group</a></li>
+            <li><a href="#">New Groups</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Create Ads</a></li>
+            <li><a href="#">Advertising on Friendly</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Activity Log</a></li>
+            <li><a href="#">News Feed Preferences</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Log Out</a></li>
           </ul>
         </li>
       </ul>
@@ -428,7 +436,7 @@
 		<div class="panel panel-default" id="sidebar01">
   		<div class="panel-body">
     		<div class="pull-left">Ticker</div>
-    		<div class="pull-right"><span class="glyphicon glyphicon-menu-down"></span></span></div>
+    		<div class="pull-right"><span class="caret"></span></span></div>
   		</div>
 		</div>
 
@@ -459,25 +467,37 @@
 
 		<div class="panel panel-default">
   		<div class="panel-body">
-  			<div class="panel-heading">
+  			<div class="panel-heading pull-left">
   				<a href="#">Suggested Pages</a>
   			</div>
+  			<div class="pull-right" id="see_all"><a href="#"><small>see all</small></a></div>
     		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		  <!-- Wrapper for slides -->
 		<div class="carousel-inner" role="listbox">
+			<!--Item 1-->
 		    <div class="item active">
-		      <img src="http://upload.voga360.com/mu/wallpaper/2015/5/25/08205834/wallpaper_l.jpg" alt="...">
+		      <a href="#"><img src="http://upload.voga360.com/mu/wallpaper/2015/5/25/08205834/wallpaper_l.jpg" alt="..."></a>
 		      <div class="page_details">
 		      	<a href="#">Funny Trolls</a>
 		      	<p>Daily fun time and stupidity relief</p>
 		      	<button type="button"><span class="glyphicon glyphicon-thumbs-up"></span> Like Page</button>
 		      </div>
 		    </div>
+		    <!--Item 2-->
 		    <div class="item">
-		      <img src="sarcastic_quote-wallpaper-640x480.jpg" alt="...">
+		      <a href="#"><img src="sarcastic_quote-wallpaper-640x480.jpg" alt="..."></a>
 		      <div class="page_details">
 		      	<a href="#">Sarcastic Me</a>
 		      	<p>Sarcastic admin with witful audience</p>
+		      	<button type="button"><span class="glyphicon glyphicon-thumbs-up"></span> Like Page</button>
+		      </div>
+		    </div>
+		    <!--Item 3-->
+		    <div class="item">
+		      <a href="#"><img src="https://s-media-cache-ak0.pinimg.com/736x/de/a7/ee/dea7ee7d2fc2583cf826c2cad7e08ec5.jpg" alt="..."></a>
+		      <div class="page_details">
+		      	<a href="#">Self Motivation</a>
+		      	<p>Life balance and achievments</p>
 		      	<button type="button"><span class="glyphicon glyphicon-thumbs-up"></span> Like Page</button>
 		      </div>
 		    </div>
@@ -516,6 +536,10 @@
 	<!--JavaScript-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
-
+    <script type="text/javascript">
+    	$('.carousel').carousel({
+  interval: 20000
+})
+    </script>
 </body>
 </html>

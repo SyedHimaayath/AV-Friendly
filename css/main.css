@@ -114,8 +114,45 @@ border-radius: 1px;
 	width:10px;
 	color: black;
 }
-#header .navbar-right li a .caret:sele{
-
+.caret{
+	cursor: pointer;
+}
+#header ul .dropdown .dropdown-menu{
+	width: 200px;
+	height:auto;
+	margin-top: 10px;
+}
+#header ul .dropdown .dropdown-menu p{
+	margin-left: 10px;
+	font-weight: normal;
+	font-size: 12px;
+	margin-top: 5px;
+}
+#header ul .dropdown .dropdown-menu li{
+	width: 100%;
+	margin-top: 0px;
+	padding:0px 22px;
+	display: block;
+	margin-bottom: 0px;
+}
+#header ul .dropdown .dropdown-menu li:hover{
+	background-color: #4267b2;
+}
+#header ul .dropdown .dropdown-menu li a{
+	max-width: 200px;
+	height: 28px;
+	padding-top: 7px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-weight: normal;
+}
+#header ul .dropdown .dropdown-menu li a:hover{
+	background-color: transparent;
+	color: white;
+}
+#header ul .dropdown .dropdown-menu .divider{
+	margin: 5px 4px 5px 6px;
+	width: 90%;
 }
 .list-heading{
 	padding: 15px 15px 0 0px;
@@ -417,6 +454,9 @@ padding-right: 0px;
 #trending_heading{
 	float: left;
 }
+#trending_heading a:hover{
+	text-decoration: none;
+}
 #trending_glyps{
 	float: right;
 }
@@ -426,9 +466,11 @@ padding-right: 0px;
 }
 #trending_glyps a span:hover{
 	color:skyblue;
+	text-decoration: underline;
 }
 .panel-body .carousel-control{
 	height: 200px;
+	margin-top:25px; 
 	opacity: 0;
 }
 .panel-body .carousel-control:hover{
@@ -440,4 +482,19 @@ padding-right: 0px;
 .page_details p{
 	font-weight: normal;
 	font-size: 12px;
+}
+#see_all a{
+	font-weight: normal;
+}
+#sidebar .page_details button{
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: black;
+	font-size: 12px;
+	background-color: ghostwhite;
+	border:1px solid #aaaaaa;
+}
+#sidebar .page_details button:hover{
+	background-color: #eeeeee;
 }
