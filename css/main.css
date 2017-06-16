@@ -114,6 +114,9 @@ border-radius: 1px;
 	width:10px;
 	color: black;
 }
+#header .navbar-right li a .caret:sele{
+
+}
 .list-heading{
 	padding: 15px 15px 0 0px;
 	font-size: 11px;
@@ -423,4 +426,18 @@ padding-right: 0px;
 }
 #trending_glyps a span:hover{
 	color:skyblue;
+}
+.panel-body .carousel-control{
+	height: 200px;
+	opacity: 0;
+}
+.panel-body .carousel-control:hover{
+	opacity: .5;
+}
+.page_details{
+	margin-top: 5px;
+}
+.page_details p{
+	font-weight: normal;
+	font-size: 12px;
 }
