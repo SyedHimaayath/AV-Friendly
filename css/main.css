@@ -29,7 +29,8 @@ body{
 }
 .container-fluid{
 	width:80%;
-	padding: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .navbar{
 	background:#4267b2;
