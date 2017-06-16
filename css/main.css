@@ -107,6 +107,13 @@ top:0px;
 right:0px;
 border-radius: 1px;
 }
+#header .navbar-right li ul li a{
+	color: black;
+}
+#header .navbar-right li a .caret{
+	width:10px;
+	color: black;
+}
 .list-heading{
 	padding: 15px 15px 0 0px;
 	font-size: 11px;
