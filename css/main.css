@@ -101,10 +101,11 @@ button.btn.btn-default{
 #header .navbar-nav.navbar-right li span .badge{
 background-color: red;
 font-size: 11px;
-padding:0px 1px 1px 1px ;
+padding:0px;
 position:absolute;
 top:0px;
 right:0px;
+border-radius: 1px;
 }
 .list-heading{
 	padding: 15px 15px 0 0px;
