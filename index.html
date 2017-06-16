@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testing Bootstrap</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+</head>
+<body id="top">
+	<div class="container">
+	<!--header-->
+	<nav class="navbar navbar-default navbar-fixed-top " id="header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img alt="Brand" src="f_icon.png"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><img src="profile_pic.jpg">Syed</a></li>
+        <li class="vert_divider">|</li>
+        <li><a href="#">Home</a></li>
+        
+        <li title="Requests">
+        	<a href="#">
+        		<span class="glyphicon glyphicon-user" aria-hidden="true">
+        			<span class="badge">2</span>
+        		</span>
+        	</a>
+        </li>
+
+        <li title="Messages">
+        	<a href="#">
+        		<span class="glyphicon glyphicon-envelope" aria-hidden="true">
+        			<span class="badge">8</span>
+        		</span>
+        	</a>
+        </li>
+
+        <li title="Notifications"><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
+        <li class="vert_divider">|</li>
+        <li title="Help"><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+	<!--Starting a row for the main body-->
+	<div class="row">
+
+	<!--First column starts (Menu)-->
+	<div class="hidden-xs col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-1">
+	<div id="menu">
+		<ul class="nav nav-stacked">
+  			<li role="presentation" class="menu_icons"><a href="#"><img src="profile_pic.jpg">Syed Himaayath</span></a></li>
+  			<li role="presentation" class="activated"><a href="#"><span class="glyphicon glyphicon-th-list"></span> News Feed<span class="glyphicon glyphicon-option-horizontal special"></span></a></li>
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-envelope"></span> Messenger<span class="badge">2</span></a></li>
+		</ul>
+		<p class="list-heading">SHORTCUTS</p>
+		<ul class="nav nav-stacked">
+  			<li role="presentation" class="menu-icons"><a href="#"><img src="codedot.png">Code Dot<span class="badge">7</span></a></li>
+  			<li role="presentation"><a href="#"><img src="hackerrank.jpg">HackerRank</a></li>
+  			<li role="presentation"><a href="#"><img src="https://pbs.twimg.com/media/CyoItS0XcAADlon.jpg">Hacktrack v2.0<span class="badge">19</span></a></li>
+  			<li role="presentation"><a href="#"><img src="http://www.bazaar66.com/sites/default/files/Udemy-logo-png-1.png">Udemy</a></li>
+		</ul>
+		<p class="list-heading">EXPLORE</p>
+		<ul class="nav nav-stacked">
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-calendar"></span>Events</a></li>
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Saved<span class="badge">9</span></a></li>
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>Likes</a></li>
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-gift"></span>Gifts</a></li>
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-picture"></span>Photos</a></li>
+  			<li role="presentation"><a href="#"><span class="glyphicon glyphicon-hand-right"></span>Pokes<span class="badge">2</span></a></li>
+  			<a href="#"><span class="caret"></span> see more</a>
+		</ul>
+		<p class="list-heading">CREATE</p>
+		<ul class="nav nav-pills" id="last">
+			<li><a>Ad</a></li>
+			<li><a>Page</a></li>
+			<li><a>Group</a></li>
+			<li><a>Event</a></li>
+		</ul>
+	</div>
+	</div>
+	<!--Second column starts (News Feed)-->
+	<div class="col-sm-7 col-md-5" id="posts">
+	<div id="newsfeed"> 
+		<!--Status Box-->
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+		    <h3 class="panel-title">
+		    	<ul class="nav nav-pills">
+				  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-pencil"></span>Create a Post</a></li><li>|</li>
+				  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-picture"></span>Photo/Video Album</a></li><li>|</li>
+				  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-facetime-video"></span>Live Video</a></li>
+				</ul>
+		    </h3>
+		  </div> 
+		  <div class="panel-body">
+		  <div>
+		    <a href="#"><img src="profile_pic.jpg" id="status_box_img"></a>
+		    <p id="status_box_txt">What's on your mind?</p>
+		  </div>
+		  </div>
+		  <div class="status_pane">
+		  <div class="pull-left">
+		  	<ul class="nav nav-pills">
+				  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-picture"></span> Photo/Video</a></li>
+				  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-cog"></span> Feeling/Activity</a></li>
+				  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-option-horizontal"></span></a></li>  
+				</ul>
+				</div>
+				<div class="pull-right">
+					<button class="btn btn-default btn-color">Post</button>
+				</div>
+		  </div>
+		</div>
+		<!--First Feed-->
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		  <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAV5AAAAJDBjNzY5MWQ1LWI5ZjEtNDliZi1iZTgwLTQwNzJkYWMwNDU4Mw.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><a href="#">Shivani</a><span class="glyphicon glyphicon-menu-down"></span></h4>
+				    <a><small>Jun 13 at 12:30 am <span class="glyphicon glyphicon-globe"></span></small></a>
+				  </div>
+				</div>
+				<p>Warning kam fact zyada lag rha h is point pe :)</p>
+		  	<blockquote>
+  				<p>If you’ve never met the devil in the road of life, its because you’re both heading in the same direction.</p>
+  				<footer><cite title="Source Title">SomeOne Experienced</cite></footer>
+			</blockquote>
+			<div class="comment_foot">
+			<div class="resp_div">
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span>Like</span></a>
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><span>Comment</span></a>
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><span>Share</span></a></div>
+		    <div class="top_comments">
+		    	<a href="">Top Comments<span class="caret"></span></a>
+		    </div>
+		    </div>
+		  </div>
+		  <div class="panel-footer">
+		  <!--First comment-->
+		  	<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://i0.wp.com/youmeandtrends.com/wp-content/uploads/2015/10/1-180.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><span><a href="#">Sana</a></span><span>Hahaha!! We are taking breaks together too... me and the devil :)</span></h4>
+				    <div class="comment_response">
+				    	<ul class="nav nav-pills">
+				    		<li><a><small>Like</small></a></li>
+				    		<li><a><small>Reply</small></a></li>
+				    		<li><a><small class="comment_time">Jun 13 at 1:10am</small></a></li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+			<!--Second Comment-->
+				<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://bestlovesms.in/wp-content/uploads/2016/06/best-whatsapp-dp-for-boys.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><span><a href="#">Kartik Cool</a></span><span>Mine is tired just like me.</span></h4>
+				    <div class="comment_response">
+				    	<ul class="nav nav-pills">
+				    		<li><a><small>Like</small></a></li>
+				    		<li><a><small>Reply</small></a></li>
+				    		<li><a><small class="comment_time">Jun 13 at 10:06am</small></a></li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+			<!--Nested comment-->
+				<div class="nested_comments">
+				  <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://i0.wp.com/youmeandtrends.com/wp-content/uploads/2015/10/1-180.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><span><a href="#">Sana</a></span><span>Your devil is as lazy as you are :)</span></h4>
+				    <div class="comment_response">
+				    	<ul class="nav nav-pills">
+				    		<li><a><small>Like</small></a></li>
+				    		<li><a><small>Reply</small></a></li>
+				    		<li><a><small class="comment_time">Jun 13 at 10:40am</small></a></li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+				</div>
+			<!--Third Comment-->
+			<div class="media">
+			  <div class="media-left">
+			    <a href="#">
+			      <img class="media-object" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAV5AAAAJDBjNzY5MWQ1LWI5ZjEtNDliZi1iZTgwLTQwNzJkYWMwNDU4Mw.jpg" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading"><span><a href="#">Shivani</a></span><span>Guys come on!! I started my journey of life alongside the devils and its almost around the corner touching hell-sides ;) <a>SyedHimaayath</a> <a>Sana</a> and <a>Ridhi</a>.</span></h4>
+			    <div class="comment_response">
+			    	<ul class="nav nav-pills">
+			    		<li><a><small>Like</small></a></li>
+			    		<li><a><small>Reply</small></a></li>
+			    		<li><a><small class="comment_time">Jun 13 at 11:40am</small></a></li>
+			    	</ul>
+			    </div>
+			  </div>
+			</div>
+
+			<div class="media">
+			  <div class="media-left">
+			    <a href="#">
+			      <img class="media-object" src="profile_pic.jpg" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading"><input class="comment_inp" type="text" name="comment" placeholder="write a comment..."></h4>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+		<!--Second Feed-->
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		  <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="profile_pic.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><a href="">Syed Himaayath</a><span class="glyphicon glyphicon-menu-down"></span></h4>
+				    <a><small>Jun 12 at 9:30 pm <span class="glyphicon glyphicon-globe"></span></small></a>
+				  </div>
+				</div>
+				<p>To all the stupid people out there</p>
+		  <img src="https://s-media-cache-ak0.pinimg.com/736x/6f/e8/e4/6fe8e4c82ed079d724b0188c8c53dc13.jpg" class="img-responsive" alt="Responsive image">
+		    <div class="comment_foot">
+			<div class="resp_div">
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span>Like</span></a>
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><span>Comment</span></a>
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><span>Share</span></a></div>
+		    <div class="top_comments">
+		    	<a href="">Top Comments<span class="caret"></span></a>
+		    </div>
+		    </div>
+		  </div>
+		  <div class="panel-footer">Add Comments here</div>
+		</div>
+		<!--Third Feed-->
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://www.thenews.com.pk/assets/front/images/newspost.svg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><a href="">The News</a><span class="glyphicon glyphicon-menu-down"></span></h4>
+				    <a><small>Jun 11 at 10:17pm <span class="glyphicon glyphicon-globe"></span></small></a>
+				  </div>
+			</div>
+				<p>While the government makes an effort to bring Vijay Mallya back to India and justice for defaulting on a Rs 9000 crore loan to PSU banks, these fans clearly had other ideas. Reports say the video was shot around the India-Pak cricket match and shows Indian protestors booing him. The good thing is that no one laid a single finger on Mallya during the protest.</p>
+				<div class="comment_foot">
+				<div class="resp_div">
+			    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span>Like</span></a>
+			    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><span>Comment</span></a>
+			    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><span>Share</span></a></div>
+			    <div class="top_comments">
+			    	<a href="">Top Comments<span class="caret"></span></a>
+			    </div>
+		    </div>
+		  </div>
+		  <div class="panel-footer">
+		  <!--first comment-->
+		  	<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://s-media-cache-ak0.pinimg.com/originals/e1/dd/5e/e1dd5e704253d0815c8ec4a26fe92c6d.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><span><a href="#">Narendar Sharma</a></span><span>Malya is Great Business man , once upon a time inspire to every young Business man, he creates more Employment in India, most of people likes his Business tricks, but now he don't have support from Government. If gives government support and time to pay all his dues, he will be back will create more employment with good planning</span></h4>
+				    <div class="comment_response">
+				    	<ul class="nav nav-pills">
+				    		<li><a><small>Like</small></a></li>
+				    		<li><a><small>Reply</small></a></li>
+				    		<li><a><small class="comment_time">Jun 13 at 1:10am</small></a></li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+				<!--Nested comment01-->
+				<div class="nested_comments">
+				  <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="http://digtoknow.com/wp-content/uploads/2015/08/4-gap.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><span><a href="#">Nita Rane</a></span><span>Some of his employees including me worked for his company even without salary for months...few of our pilots and crew killed themselves coz of commitment and loans whch they had to pay..coz not everyone had an option..inspite of that we had no appreciation or response from him till date..karma is bitch...its true</span></h4>
+				    <div class="comment_response">
+				    	<ul class="nav nav-pills">
+				    		<li><a><small>Like</small></a></li>
+				    		<li><a><small>Reply</small></a></li>
+				    		<li><a><small class="comment_time">Jun 13 at 10:40am</small></a></li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+				
+				<!--Nested comment02-->
+				
+				  <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://i0.wp.com/youmeandtrends.com/wp-content/uploads/2015/10/1-180.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><span><a href="#">Random Guy</a></span><span>Criminals can easily survive if there are fools like you.</span></h4>
+				    <div class="comment_response">
+				    	<ul class="nav nav-pills">
+				    		<li><a><small>Like</small></a></li>
+				    		<li><a><small>Reply</small></a></li>
+				    		<li><a><small class="comment_time">Jun 13 at 10:40am</small></a></li>
+				    	</ul>
+				    </div>
+				  </div>
+				</div>
+				</div>
+				<div class="media">
+			  <div class="media-left">
+			    <a href="#">
+			      <img class="media-object" src="profile_pic.jpg" alt="...">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <h4 class="media-heading"><input class="comment_inp" type="text" name="comment" placeholder="write a comment..."></h4>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<!--Fourth Feed-->
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		  <div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="profile_pic.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading"><a href="">Syed Himaayath</a><span class="glyphicon glyphicon-menu-down"></span></h4>
+				    <a><small>Jun 11 at 9:30pm <span class="glyphicon glyphicon-globe"></span></small></a>
+				  </div>
+				</div>
+				  <div class="embed-responsive embed-responsive-16by9">
+		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/72UO0v5ESUo""></iframe>
+				</div>
+		    <div class="comment_foot">
+			<div class="resp_div">
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span>Like</span></a>
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span><span>Comment</span></a>
+		    <a href="#" class="resp_pane"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span><span>Share</span></a></div>
+		    <div class="top_comments">
+		    	<a href="">Top Comments<span class="caret"></span></a>
+		    </div>
+		    </div>
+		  </div>
+		  <div class="panel-footer">Add Comments here</div>
+		</div>
+
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		  	Load More
+		  </div>
+		  </div>
+	</div>
+	</div>
+
+
+	<!--Column three starts (Sidebar)-->
+	<div class="hidden-xs hidden-sm col-md-3">
+	<div id="sidebar">
+		<div class="panel panel-default" id="sidebar01">
+  		<div class="panel-body">
+    		<div class="pull-left">Ticker</div>
+    		<div class="pull-right"><span class="glyphicon glyphicon-menu-down"></span></span></div>
+  		</div>
+		</div>
+
+		<div class="panel panel-default" id="sidebar02">
+  		<div class="panel-body">
+    		<span class="glyphicon glyphicon-gift"></span> It's <span><a href="#">Alisha</a>'s</span> Birthday
+  		</div>
+		</div>
+
+		<div class="panel panel-default">
+  		<div class="panel-body">
+    		<div class="panel-heading">
+  				<div id="trending_heading"><a href="#">Trending</a></div>
+  				<div id="trending_glyps">
+  					<a href="#"><span class="glyphicon glyphicon-fire"></span></a>
+  					<a href="#"><span class="glyphicon glyphicon-globe"></span></a>
+  					<a href="#"><span class="glyphicon glyphicon-education"></span></a>
+  					<a href="#"><span class="glyphicon glyphicon-film"></span></a>
+  					<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+  				</div>
+  			</div>
+
+  			<div>
+
+  			</div>
+		</div>
+		</div>
+
+		<div class="panel panel-default">
+  		<div class="panel-body">
+  			<div class="panel-heading">
+  				<a href="#">Suggested Pages</a>
+  			</div>
+    		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Wrapper for slides -->
+		<div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="http://upload.voga360.com/mu/wallpaper/2015/5/25/08205834/wallpaper_l.jpg" alt="...">
+		    </div>
+		    <div class="item">
+		      <img src="http://wallpapercave.com/wp/84id42L.png" alt="...">
+		    </div>
+		</div>
+
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+  		</div>
+		</div>
+	</div>
+	</div>
+
+	</div>
+	<!--Footer-->
+	<footer>
+	<ul class="nav nav-pills pull-right">
+	  <li role="presentation"><a href="#">About us</a></li>
+	  <li role="presentation"><a href="#">Home</a></li>
+	  <li role="presentation"><a href="#">Privacy</a></li>
+	  <li role="presentation"><a href="#">Advertising</a></li>
+	  <li role="presentation"><a href="#">Cookies</a></li>
+	  <li role="presentation"><a href="#">Ad Choices</a></li>
+	  <li role="presentation"><a href="#top">Go Top</a></li>
+	</ul>
+	</footer>
+	</div>
+</body>
+</html>
