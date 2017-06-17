@@ -117,6 +117,9 @@ border-radius: 1px;
 .caret{
 	cursor: pointer;
 }
+.navbar-default .navbar-nav>.open>a:focus{
+	background-color: transparent;
+}
 #header ul .dropdown .dropdown-menu{
 	width: 200px;
 	height:auto;
@@ -127,6 +130,7 @@ border-radius: 1px;
 	font-weight: normal;
 	font-size: 12px;
 	margin-top: 5px;
+	margin-bottom: 0px;
 }
 #header ul .dropdown .dropdown-menu li{
 	width: 100%;
@@ -425,6 +429,9 @@ padding-right: 0px;
 .panel-footer .nested_comments img{
 	width:20px;
 }
+.panel-footer .media-body .picture_comment img{
+	width: 60px;
+}
 #sidebar .panel .panel-body{
 	padding:10px;
 }
@@ -451,8 +458,27 @@ padding-right: 0px;
 	color: red;
 	margin-right: 5px;
 }
+#sidebar #sidebar01 .tab-pane .media{
+	padding: 5px 10px 10px 2px;
+	margin-top: 0px;
+}
+#sidebar #sidebar01 .tab-pane .media:hover{
+	background-color: ghostwhite;
+}
+#sidebar #sidebar01 .tab-pane .media .media-left img{
+	width: 32px;
+	margin-left: 5px;
+}
+#sidebar #sidebar01 .tab-pane .media .media-body .media-heading{
+	font-size:12px;
+}
+#sidebar #sidebar01 .tab-pane .media .media-body .media-heading a{
+	font-weight: bold;
+	color: black;
+}
 #trending_heading{
 	float: left;
+	letter-spacing: .5px;
 }
 #trending_heading a:hover{
 	text-decoration: none;
@@ -467,6 +493,28 @@ padding-right: 0px;
 #trending_glyps a span:hover{
 	color:skyblue;
 	text-decoration: underline;
+}
+.panel-body .tab-content{
+	margin-top:20px;
+	height: auto;
+}
+.tab-content .tab-pane .media-list .media .media-left{
+	padding-right: 5px;
+	font-size:12px;
+	color: skyblue;
+}
+.tab-content .tab-pane .media-list .media .media-body h4{
+	font-size: 12px;
+	margin-bottom: 0px;
+	cursor: pointer;
+}
+.tab-content .tab-pane .media-list .media .media-body small{
+	font-weight: normal;
+	color: black;
+	font-size: 12px;
+}
+.news_source{
+	color: #aaaaaa;
 }
 .panel-body .carousel-control{
 	height: 200px;
