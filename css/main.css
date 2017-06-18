@@ -3,7 +3,6 @@ body{
 	margin:0px;
 	background:#e9ebee;
 	padding-top: 10px;
-	min-width: 144px;
 }
 .container{
 	padding: 0px;
@@ -72,22 +71,27 @@ body{
 }
 .form-group .form-control{
 	height: 25px;
-	width:393px;
+	width:380px;
 	margin: 0px;
 	padding-left:5px;
 	border-radius: 3px;
 	border:1px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
-
 button.btn.btn-default{
 	height:25px;
-	padding:0px 12px;
+	padding:0px 15px;
 	margin: 0px;
 	border-radius: 3px;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
-	margin-left: -14px;
 	background-color: ghostwhite;
+	margin-left: -5px;
+	border:1px;
+}
+button.btn.btn-default .glyphicon-search{
+	color: #aaaaaa;
 }
 .navbar-nav li a{
 	margin: 12px 10px 0px 10px;
@@ -204,6 +208,7 @@ padding-right: 0px;
 #menu ul li{
 	padding:2px 5px 2px 5px;
 	margin: 0px;
+	margin-bottom: 1px;
 }
 #menu ul{
 	padding: 0px;
@@ -226,6 +231,18 @@ padding-right: 0px;
 	font-size: 15px;
 	padding: 0px;
 }
+.glyphicon-gift{
+	color: red;
+}
+.glyphicon-briefcase{
+	color: green;
+}
+.glyphicon-calendar{
+	color: orange;
+}
+.glyphicon-hand-right{
+	color: orange;
+}
 #menu li:hover{
 	background-color: ghostwhite;
 }
@@ -246,6 +263,13 @@ padding-right: 0px;
 }
 #last.nav.nav-pills a{
 	color:#4267b2;
+}
+#last.nav.nav-pills a:hover{
+	background-color: transparent;
+	cursor: pointer;
+}
+#last.nav.nav-pills li:hover{
+	background-color: transparent;
 }
 .panel{
 	margin-bottom: 10px;
@@ -374,8 +398,22 @@ padding-right: 0px;
 	font-size:13px;
 	font-weight: bold;
 }
+.response_count{
+	margin-bottom: 7px;
+	height: 20px;
+}
+.response_count img{
+	width: 60px;
+	height:23px;
+	margin-right: 2px;
+	cursor: pointer;
+}
+.response_count span a{
+	color: #aaaaaa;
+}
 .comment_foot{
 	border-top: 1px solid #dddddd;
+	padding-top:2px;
 }
 .resp_div{
 	padding-top: 5px;
@@ -411,6 +449,9 @@ padding-right: 0px;
 	margin-right: 5px;
 	color: #aaaaaa;
 }
+.media .media-body .comment_image img{
+	width: 100px;
+}
 .panel-footer .nav.nav-pills a{
 	padding: 0px;
 	margin-right: 10px;
@@ -441,6 +482,17 @@ padding-right: 0px;
 }
 .panel-footer .media-body .picture_comment img{
 	width: 60px;
+}
+#newsfeed .well{
+	padding:10px;
+	background-color: #29487d;
+	cursor: pointer;
+}
+#newsfeed .well a{
+	color: white;
+}
+#newsfeed .well a:hover{
+	text-decoration: none;
 }
 #sidebar .panel .panel-body{
 	padding:10px;
@@ -555,4 +607,30 @@ padding-right: 0px;
 }
 #sidebar .page_details button:hover{
 	background-color: #eeeeee;
+}
+#sidebar05.panel.panel-default .panel-body{
+	padding:5px;
+}
+#sidebar05 #languages_tab li{
+	margin: 5px;
+}
+#sidebar05 #languages_tab li a{
+	padding: 0px;
+	font-size: 13px;
+	font-weight: normal;
+}
+#sidebar05 #languages_tab li a:hover{
+	background-color: transparent;
+}
+#sidebar .new_footer ul{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#sidebar .new_footer ul li{
+	margin-right: 5px;
+}
+#sidebar .new_footer ul li a{
+	padding: 0px;
+	font-size: 13px;
+	color: #aaaaaa;
 }
