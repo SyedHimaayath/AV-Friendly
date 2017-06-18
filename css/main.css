@@ -486,13 +486,10 @@ padding-right: 0px;
 #newsfeed .well{
 	padding:10px;
 	background-color: #29487d;
-	cursor: pointer;
+	width: 100%;
 }
 #newsfeed .well a{
 	color: white;
-}
-#newsfeed .well a:hover{
-	text-decoration: none;
 }
 #sidebar .panel .panel-body{
 	padding:10px;
