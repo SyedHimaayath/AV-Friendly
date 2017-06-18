@@ -54,7 +54,7 @@ body{
 	height:inherit;
 }
 #bs-example-navbar-collapse-1 .navbar-form .form-group{
-	display: inline-flex;
+	display:inline-flex;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border:0px;
