@@ -3,6 +3,7 @@ body{
 	margin:0px;
 	background:#e9ebee;
 	padding-top: 10px;
+	min-width: 144px;
 }
 .container{
 	padding: 0px;
@@ -53,7 +54,10 @@ body{
 	height:inherit;
 }
 #bs-example-navbar-collapse-1 .navbar-form .form-group{
-	
+	display: inline-flex;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:0px;
 }
 #bs-example-navbar-collapse-1 .navbar-right li{
 	display: inline-block;
@@ -227,10 +231,12 @@ padding-right: 0px;
 }
 #menu li:hover{
 	background-color: ghostwhite;
-
 }
 #menu a:hover{
 	background-color: ghostwhite;
+}
+#menu a:focus{
+	background-color: transparent;
 }
 .activated{
 	background-color: ghostwhite;
