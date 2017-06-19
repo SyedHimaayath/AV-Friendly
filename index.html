@@ -84,6 +84,7 @@
 
 	<!--First column starts (Menu)-->
 	<div class="hidden-xs col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-1">
+	<div id="menu_box">
 	<div id="menu">
 		<ul class="nav nav-stacked">
   			<li role="presentation" class="menu_icons"><a href="#"><img src="profile_pic.jpg">Syed Himaayath</span></a></li>
@@ -116,8 +117,10 @@
 		</ul>
 	</div>
 	</div>
+	</div>
+
 	<!--Second column starts (News Feed)-->
-	<div class="col-sm-7 col-md-5" id="posts">
+	<div class="col-xs-12 col-sm-7 col-md-5" id="posts">
 	<div id="newsfeed"> 
 		<!--Status Box-->
 		<div class="panel panel-default">
@@ -523,7 +526,6 @@
 		  </div>
 		</div>
 	<!--Fifth Feed-->
-	<!--Sixth Feed-->
 		<div class="panel panel-default">
 		  <div class="panel-body">
 		  <div class="media">
@@ -658,14 +660,14 @@
 		  </div>
 		</div>
 
-		  <button class="well" align="center"><a href="#">Load More</a></button>
+		  <button class="well" align="center"><a href="#top">Load More</a></button>
 	</div>
 	</div>
 
 
 	<!--Column three starts (Sidebar)-->
 	<div class="hidden-xs hidden-sm col-md-3">
-	<div id="sidebar">
+	<div class="fix-sidebar" id="sidebar">
 		<div class="panel panel-default" id="sidebar01">
   		<a href="#tickertab" data-toggle="tab">
   		<div class="panel-body" >
@@ -728,11 +730,11 @@
     		<div class="panel-heading">
   				<div id="trending_heading">Trending</div>
   				<div id="trending_glyps">
-  					<a href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-fire"></span></a>
-  					<a href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span></a>
-  					<a href="#tab3" data-toggle="tab"><span class="glyphicon glyphicon-education"></span></a>
-  					<a href="#tab4" data-toggle="tab"><span class="glyphicon glyphicon-film"></span></a>
-  					<a href="#tab5" data-toggle="tab"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+  					<a href="#tab1" title="Hot-News" data-toggle="tab"><span class="glyphicon glyphicon-fire"></span></a>
+  					<a href="#tab2" title="International" data-toggle="tab"><span class="glyphicon glyphicon-globe"></span></a>
+  					<a href="#tab3" title="Education" data-toggle="tab"><span class="glyphicon glyphicon-education"></span></a>
+  					<a href="#tab4" title="Entertainment" data-toggle="tab"><span class="glyphicon glyphicon-film"></span></a>
+  					<a href="#tab5" title="Market" data-toggle="tab"><span class="glyphicon glyphicon-shopping-cart"></span></a>
   				</div>
   			</div>
   			<div class="tab-content">
@@ -975,9 +977,30 @@
 
   		</div>
 		</div>
+	<!--People you may know-->
+		<div class="panel panel-default" id="sidebar05">
+  		<div class="panel-body">
+  			<div class="panel-heading pull-left">
+  				<a href="#">Friend Requests</a>
+  			</div>
+  			<div class="pull-right" id="see_all"><a href="#"><small>see all</small></a></div>
+    		<div class="media">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/e15/11084881_780405838745335_397924015_n.jpg" alt="...">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4><span><a href="#">Rishi</a></span></h4>
+				    <h4><small>11 mutuall friends</small></h4>
+				    <span><button type="button"><small>Confirm Friend</small></button></span>
+				  </div>
+				</div>
+  		</div>
+		</div>
 
 		<!--Languages-->
-		<div class="panel panel-default" id="sidebar05">
+		<div class="panel panel-default" id="sidebar06">
   		<div class="panel-body">
     		<ul class="nav nav-pills" id="languages_tab">
 			  <li role="presentation"><a href="#">English (us)</a></li>
@@ -1011,6 +1034,10 @@
 
 	</div>
 	</div>
+	<footer>
+		<div class="well pull-right">Chat (Off)<span class="glyphicon glyphicon-cog pull-right"></span>
+		<span class="glyphicon glyphicon-edit pull-right"></span></div>
+	</footer>
 	<!--JavaScript-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
