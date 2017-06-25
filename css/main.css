@@ -3,7 +3,7 @@ body{
 	margin:0px;
 	background:#e9ebee;
 	padding-top: 10px;
-	font-family: "Tahoma"
+	font-family: "Tahoma";
 }
 a{
 	color: #3b5998;
@@ -682,4 +682,5 @@ footer .well{
 	padding:5px 10px 5px 10px;
 	border:1px solid #aaaaaa;
 	font-weight: bold;
+	margin:0px;
 }
