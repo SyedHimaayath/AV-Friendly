@@ -1,5 +1,5 @@
 /*main css file*/
-body{
+html,body{
 	margin:0px;
 	background:#e9ebee;
 	padding-top: 10px;
@@ -8,21 +8,17 @@ body{
 a{
 	color: #3b5998;
 }
-.container{
+/*.container{
 	padding: 0px;
 	margin: 0px;
-	width: 100%;
 }
-.container-fluid{
-}
+*/
 .row{
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
 }
-#menu_box{
+/*#menu_box{
 	position: fixed;
-	padding-right: 25px;
-	width: inherit;
-}
+}*/
 #menu{
 	height:auto;
 }
@@ -33,11 +29,6 @@ a{
 #newsfeed::-webkit-scrollbar {
     display: none;
 }
-.container-fluid{
-	width:80%;
-	padding-left: 10px;
-	padding-right: 10px;
-}
 .navbar{
 	background:#3b5998;
 	margin:0px;
@@ -47,8 +38,8 @@ a{
 }
 #header .navbar-brand{
 	color: white;
-	padding: 0px;
-	margin-top: 10px;
+	padding: 0px 0px 0px 15px;
+	margin-top: 8px;
 	height:42px;
 }
 #header .navbar-header{
@@ -63,18 +54,13 @@ a{
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border:0px;
-}
+}/*
 #bs-example-navbar-collapse-1 .navbar-right li{
 	display: inline-block;
-}
-.navbar-form.navbar-left{
-	margin-top:10px;
-	padding-left: 5px;
+}*/
+/*.navbar-form.navbar-left{
 	padding-right: 0px;
-}
-.form-group{
-	margin-left: 0px;
-}
+}*/
 .form-group .form-control{
 	height: 25px;
 	width:380px;
@@ -138,14 +124,11 @@ border-radius: 1px;
 	width:10px;
 	color: black;
 }
-.caret{
-	cursor: pointer;
-}
 .navbar-default .navbar-nav>.open>a:focus{
 	background-color: transparent;
 }
 #header ul .dropdown .dropdown-menu{
-	width: 200px;
+	/*width: 200px;*/
 	height:auto;
 	margin-top: 10px;
 }
@@ -192,6 +175,9 @@ border-radius: 1px;
 padding-left: 0px;
 padding-right: 0px;
 }
+.caret{
+	cursor: pointer;
+}
 .panel-body span .glyphicon{
 	margin:0 4px 0px 10px;
 }
@@ -231,7 +217,7 @@ padding-right: 0px;
 	text-decoration: none;
 	color:black;
 	font-size: 12px;
-	padding: 2px 0px 2px 0px;
+	padding: 2px 5px 2px 0px;
 }
 #menu .badge{
 	float:right;
@@ -407,10 +393,11 @@ padding-right: 0px;
 
 }
 .panel-body .resp_pane span{
-	margin-right:25px;
+	margin-right:15px;
 	font-size:13px;
 	font-weight: bold;
 }
+
 .response_count{
 	margin-bottom: 7px;
 	height: 20px;
