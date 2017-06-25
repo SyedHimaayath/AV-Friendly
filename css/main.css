@@ -63,7 +63,6 @@ a{
 }*/
 .form-group .form-control{
 	height: 25px;
-	width:380px;
 	margin: 0px;
 	padding-left:5px;
 	border-radius: 3px;
@@ -190,7 +189,6 @@ padding-right: 0px;
 	margin-top: 12px;
 	color: #666666;
 }
-
 #menu{
 	margin-left: 0px;
 }
@@ -670,4 +668,51 @@ footer .well{
 	border:1px solid #aaaaaa;
 	font-weight: bold;
 	margin:0px;
+}
+@media screen and (min-width: 767px)
+{
+	.form-group .form-control{
+		width:320px;
+	}
+	#header .navbar-header{
+	height:50px;
+}
+	footer .well{
+	width:250px;
+}
+
+}
+@media screen and (min-width: 1170px)
+{
+	.form-group .form-control{
+		width:380px;
+	}
+
+}
+@media screen and (max-width: 453px)
+{
+	.form-group .form-control{
+		width:260px;
+	}
+	#header .navbar-header{
+	height:50px;
+	}
+	footer .well{
+	width:200px;
+	}
+	.navbar-nav li a{
+	margin:0px;
+	padding: 0px 5px 0px 10px;
+	font-size: 12px;
+	font-weight: normal;
+	}
+	.navbar-nav .vert_divider{
+		display: none;
+	}
+	.navbar-collapse{
+		background-color:#e9ebee;
+	}
+	#header ul .dropdown .dropdown-menu p{
+		display: none;
+	}
 }
